@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: url(./background.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.login {
+    display: flex;
+    width: 930px;
+}
+
+.login-img{
+    background-color: rgb(255, 255, 255, 0.5);
+    width: 50%;
+    padding: 20px;
+    border-radius: 20px 0 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.login-img img{
+    width: 100%;
+}
+
+.login-form{
+    background-color: rgb(255, 255, 255, 0.4);
+    backdrop-filter: blur(40px);
+    padding: 30px 40px;
+    width: 50%;
+    border-radius: 0px 20px 20px 0px;
+}
+
+.login-form h2{
+    font-size: 30px;
+}
+
+.login-form p{
+    font-weight: 600;
+    color: #353535;
+}
+
+.login-form p a{
+    text-decoration: none;
+    color: #ff008a;
+}
+
+.login-form form{
+    margin: 20px 0px;
+}
+
+form .login-input {
+    margin-bottom: 15px;
+}
+
+form .login-input label{
+    color: #353535;
+    margin-bottom: 5px;
+    font-weight: bold;
+    display: flex;
+}
+
+form .login-input input{
+    width: 100%;
+    border: 2px solid transparent;
+    background-color: rgb(255, 255, 255, 0.32);
+    padding: 15px;
+    height: 47px;
+    border-radius: 20px;
+    font-size: 15px;
+    outline: none;
+    color: #616161;
+    transition: all 0.4s ease;
+}
+
+form .login-input input:focus{
+    border-color: #ff008869;
+}
+
+.w50{
+    width: 50%;
+    float: left;
+    padding-right: 15px;
+}
+
+form .login-input button{
+    width: 100%;
+    height: 47px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 17px;
+    background: linear-gradient(120deg, #7CAFEC, #C15597, #CA9FDC);
+    background-size: 200%;
+    color: white;
+    font-weight: 500;
+    margin-top: 15px;
+    transition: 0.5s ease;
+}
+
+form .login-input button:hover{
+    background-position: right;
+}
+
+@media (max-width: 900px){
+    .login-img{
+        display: none;
+    }
+
+    .login{
+        width: 700px;
+    }
+
+    .login-form{
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 500px){
+    .w50{
+        width: 100%;
+    }
+}
+
